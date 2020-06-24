@@ -13,6 +13,4 @@ The key probably would be in the paragraph weighting part. one approach could be
 
 2. Implement one of the above methods. How did it affect the results?
 
-I am gonna implement a function that obtains only the final paragraph for each review, pass the docs as only the final paragraphs for each review.
-
 You can check the results obtained running the main function, and you will see the normal case and case for improvement.
