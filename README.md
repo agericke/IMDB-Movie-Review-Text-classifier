@@ -39,7 +39,7 @@ __Negative class top coefficients__:
 - token_pair=the__worst: -0.36263
 - token_pair=is__so: -0.29486
 
-Finally, we perform an additional analysis to increase even more our model accuracy by providing additional features to the model and answer possible confilctive questions as you can see in the document ShortAnswer.txt.
+Finally, we perform an additional analysis to increase even more our model accuracy by providing additional features to the model and answer possible conflictive questions as you can see in the document ShortAnswer.txt.
 
 You can also play with the interactive notebook provided in the repository to test all the dfferent functions and understand their objective and results.
 
