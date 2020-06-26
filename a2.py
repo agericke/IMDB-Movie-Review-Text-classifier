@@ -142,9 +142,9 @@ def token_pair_features(tokens, feats, k=3):
         feats["token_pair=%s__%s" % (tup[0],tup[1])] = value
     
 
-
 neg_words = set(['bad', 'hate', 'horrible', 'worst', 'boring'])
 pos_words = set(['awesome', 'amazing', 'best', 'good', 'great', 'love', 'wonderful'])
+
 
 def lexicon_features(tokens, feats):
     """
@@ -381,11 +381,7 @@ def eval_all_combinations(docs, labels, punct_vals,
             accuracy_val = cross_validation_accuracy(model, X, labels, 5)
             result.append({'punct': punct_val, 'features': feature_val, 'min_freq':min_freq_val, 'accuracy': accuracy_val})
             
-    return sorted(result, key=lambda x: -x['accuracy'])
-        
-        
-    
-    
+    return sorted(result, key=lambda x: -x['accuracy'])   
 
 
 def plot_sorted_accuracies(results):
@@ -400,8 +396,6 @@ def plot_sorted_accuracies(results):
     plt.xlabel('setting')
     plt.ylabel('accuracy')
     plt.savefig('accuracies.png')
-    
-    
 
 
 def mean_accuracy_per_setting(results):
@@ -576,10 +570,7 @@ def print_top_misclassified(test_docs, test_labels, X_test, clf, n):
 
 
 def main():
-    """
-    Put it all together.
-    ALREADY DONE.
-    """
+    
     feature_fns = [token_features, token_pair_features, lexicon_features]
     # Download and read data.
     download_data()
